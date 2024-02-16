@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the '3030x16' title`, () => {
+  it(`should have the '3030x15' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('3030x16');
+    expect(app.title).toEqual('3030x15');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, 3030x16');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, 3030x15');
   });
 });
